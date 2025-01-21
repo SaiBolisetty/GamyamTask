@@ -1,0 +1,86 @@
+/* Navigation.module.css */
+
+/* Common Navigation Styles */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop Navigation */
+.desktopNav {
+    display: flex;
+}
+
+.desktopNav .navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktopNav .navItem {
+    margin: 0 15px;
+}
+
+.desktopNav .navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.desktopNav .navLink:hover {
+    color: #ffcc00;
+}
+
+/* Mobile Navigation */
+.mobileNav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b3c6d ;
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.mobileNav .navList {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    list-style: none;
+   
+    margin: auto ;
+  width: 95%;
+}
+
+.mobileNav .navItem {
+    margin: 0;
+}
+
+.mobileNav .navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.mobileNav .navLink:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 768px) {
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+}
